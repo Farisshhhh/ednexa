@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FormEvent, useState } from "react";
 import SuccessModal from "@/components/contact/SuccessModal";
 import Button from "@/components/ui/Button";
+import { toast } from "sonner";
 
 
 
@@ -83,7 +84,11 @@ try {
 }
 
 if (!response.ok) {
-  console.error(data.error || "Server error");
+  console.error("Contact API error:", data.error);
+
+  toast.error(
+    data.error || "Unable to send your enquiry. Please try again."
+  );
 
   return;
 }
