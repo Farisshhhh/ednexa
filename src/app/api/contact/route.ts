@@ -32,7 +32,7 @@ export async function POST(req: Request) {
     // 1. Send enquiry to Ednexa
     const { data: adminData, error: adminError } =
       await resend.emails.send({
-        from: "Ednexa <onboarding@resend.dev>",
+        from: "Ednexa <hello@ednexa.in>",
         to: "mohdfarisshhhh@gmail.com",
         subject: `New Project Enquiry from ${body.name}`,
         html: `
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
     // 2. Send confirmation to client
     const { data: clientData, error: clientError } =
       await resend.emails.send({
-        from: "Ednexa <onboarding@resend.dev>",
+        from: "Ednexa <hello@ednexa.in>",
         to: body.email,
         subject: "We've received your enquiry • Ednexa",
         html: `
