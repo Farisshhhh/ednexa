@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden pt-36 pb-24 lg:pt-44 lg:pb-32">
       {/* Background Glow */}
 
       <div className="absolute left-1/2 top-20 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-[#C7A86D]/10 blur-[140px]" />
