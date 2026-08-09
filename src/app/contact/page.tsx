@@ -23,7 +23,10 @@ export default function ContactPage() {
       <main className="bg-[#F8F7F4]">
         <ContactHero />
 
-        <section className="py-32">
+        <section
+          id="contact-form"
+          className="py-32"
+        >
           <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:grid-cols-[1.15fr_0.85fr]">
             <ContactForm />
 

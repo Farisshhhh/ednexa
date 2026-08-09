@@ -6,10 +6,7 @@ import FeaturedProject from "@/components/portfolio/FeaturedProject";
 
 export default function Portfolio() {
   return (
-    <section
-      id="work"
-      className="relative overflow-hidden bg-white py-40"
-    >
+    <section id="portfolio">
       <Container>
         {/* Section Heading */}
 
