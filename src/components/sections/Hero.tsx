@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#F8F7F4] pt-40 pb-32">
+    <section className="relative overflow-hidden">
       {/* Background Glow */}
 
       <div className="absolute left-1/2 top-20 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-[#C7A86D]/10 blur-[140px]" />
@@ -17,11 +17,7 @@ export default function Hero() {
         <div className="relative grid items-center gap-20 lg:grid-cols-[0.9fr_1.1fr]">
           {/* Left Side */}
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-          >
+          <div>
             {/* Badge */}
 
             <div className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-5 py-2 shadow-sm">
@@ -58,27 +54,29 @@ export default function Hero() {
             {/* Buttons */}
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-  <Link href="/contact#contact-form">
-    <Button size="lg">
-      Start a Project
-    </Button>
-  </Link>
+              <Button size="lg">
+                Start a Project
+              </Button>
 
-  <Link href="/#work">
-    <Button
-      variant="secondary"
-      size="lg"
-    >
-      View Our Work
-    </Button>
-  </Link>
-</div>
+              <Button
+                variant="secondary"
+                size="lg"
+              >
+                View Our Work
+              </Button>
+            </div>
 
             {/* Philosophy */}
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
               transition={{
                 delay: 0.4,
                 duration: 0.6,
@@ -138,7 +136,7 @@ export default function Hero() {
                 </motion.div>
               </div>
             </motion.div>
-          </motion.div>
+          </div>
 
           {/* Right Side */}
 
