@@ -126,10 +126,7 @@ export default function Footer() {
               <Button
   className="group"
   onClick={() => {
-    document.getElementById("contact-form")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    window.location.hash = "contact-form";
   }}
 >
   <span className="flex items-center gap-2">

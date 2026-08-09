@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import BrowserMockup from "../hero/BrowserMockup";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -57,17 +58,21 @@ export default function Hero() {
             {/* Buttons */}
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button size="lg">
-                Start a Project
-              </Button>
+  <Link href="/contact#contact-form">
+    <Button size="lg">
+      Start a Project
+    </Button>
+  </Link>
 
-              <Button
-                variant="secondary"
-                size="lg"
-              >
-                View Our Work
-              </Button>
-            </div>
+  <Link href="/work">
+    <Button
+      variant="secondary"
+      size="lg"
+    >
+      View Our Work
+    </Button>
+  </Link>
+</div>
 
             {/* Philosophy */}
 
