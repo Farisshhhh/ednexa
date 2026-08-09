@@ -54,17 +54,13 @@ export default function Hero() {
             {/* Buttons */}
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+  <Link href="/contact#">
   <Button
-    size="lg"
-    onClick={() => {
-      document.getElementById("contact-form")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }}
-  >
+   size="lg"
+   variant="primary">
     Start a Project
   </Button>
+</Link>
 
   <Button
     variant="secondary"
