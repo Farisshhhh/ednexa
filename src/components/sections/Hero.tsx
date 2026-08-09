@@ -64,7 +64,7 @@ export default function Hero() {
     </Button>
   </Link>
 
-  <Link href="/work">
+  <Link href="/#work">
     <Button
       variant="secondary"
       size="lg"
