@@ -54,17 +54,31 @@ export default function Hero() {
             {/* Buttons */}
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button size="lg">
-                Start a Project
-              </Button>
+  <Button
+    size="lg"
+    onClick={() => {
+      document.getElementById("contact-form")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }}
+  >
+    Start a Project
+  </Button>
 
-              <Button
-                variant="secondary"
-                size="lg"
-              >
-                View Our Work
-              </Button>
-            </div>
+  <Button
+    variant="secondary"
+    size="lg"
+    onClick={() => {
+      document.getElementById("portfolio")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }}
+  >
+    View Our Work
+  </Button>
+</div>
 
             {/* Philosophy */}
 
