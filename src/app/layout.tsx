@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   description:
     "Ednexa helps businesses grow through premium websites, branding, SEO, AI automation and modern digital experiences.",
 
+    alternates: {
+  canonical: "https://ednexa.in",
+},
+
   keywords: [
     "Ednexa",
     "Web Design",
